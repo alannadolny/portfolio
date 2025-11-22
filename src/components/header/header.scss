@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--header-font-color);
+
+  div:first-of-type {
+    font-family: "Momo signature", sans-serif;
+    font-size: 80px;
+  }
+
+  div:nth-of-type(2) {
+    width: 50%;
+    font-size: xxx-large;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-transform: uppercase;
+      font-weight: bolder;
+    }
+  }
+
+  p {
+    font-weight: bolder;
+  }
+
+  div:last-of-type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+
+    #phone-icon {
+      color: var(--dark-teal);
+      background-color: white;
+      margin-left: 20px;
+      padding: 12px;
+      border-radius: 50%;
+      box-shadow: -3px 3px 8px -6px #000000;
+    }
+  }
+}
