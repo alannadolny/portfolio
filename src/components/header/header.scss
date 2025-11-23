@@ -9,9 +9,12 @@ header {
   div:first-of-type {
     font-family: "Momo signature", sans-serif;
     font-size: 80px;
+    padding-left: 40px;
   }
 
   div:nth-of-type(2) {
+    position: relative;
+    right: 80px;
     width: 50%;
     font-size: xxx-large;
     display: flex;
@@ -20,6 +23,7 @@ header {
     a {
       text-transform: uppercase;
       font-weight: bolder;
+      padding: 15px;
     }
   }
 
@@ -32,6 +36,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: xx-large;
+    padding-left: 40px;
 
     #phone-icon {
       color: var(--dark-teal);

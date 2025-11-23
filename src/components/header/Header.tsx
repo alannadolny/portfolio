@@ -7,6 +7,7 @@ const Header = () => {
             <div>Alan</div>
             <div>
                 <a>Projects</a>
+                <a>Technologies</a>
                 <a>Education</a>
                 <a>Experience</a>
             </div>

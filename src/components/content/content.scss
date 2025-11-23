@@ -1,13 +1,52 @@
 #content {
-  background-color: var(--bg-color);
 
   #profile {
+    display: flex;
+    background-color: var(--bg-color);
+
+    #right-profile {
+      color: var(--alabaster-grey);
+      font-size: 60px;
+      margin-left: 100px;
+      font-weight: bolder;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      #email {
+        font-size: 40px;
+      }
+
+      #experience {
+        display: flex;
+        align-items: center;
+
+        span:first-of-type {
+          font-size: 80px;
+        }
+
+        span:nth-of-type(2) {
+          margin-left: 20px;
+          font-size: 20px;
+          width: 10px;
+        }
+      }
+    }
 
     img {
       width: 500px;
-      position: relative;
-      top: 12px;
-      left: 50px;
+      padding-left: 40px;
     }
+  }
+
+  #timeline-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  #education, #experience {
+    padding-bottom: 50px;
   }
 }

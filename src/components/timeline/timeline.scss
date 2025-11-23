@@ -1,0 +1,58 @@
+.point-outer {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  border: 3px dashed var(--dark-teal);
+
+  .point-inner {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.point-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  min-height: 200px;
+
+  .point-right-wrapper {
+    display: flex;
+    width: 50%;
+    gap: 20px;
+
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.point-info-title {
+  font-weight: bolder;
+  font-size: 30px;
+  color: var(--deep-space-blue);
+}
+
+.point-info-content {
+  font-size: 20px;
+  color: var(--dark-teal);
+}
+
+.points-separator {
+  border-left: 3px dashed var(--dark-teal);
+  display: flex;
+  height: calc(100% - 58px);
+}
+
+.right-point-info {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.point-info:first-of-type {
+  width: 40%;
+}
