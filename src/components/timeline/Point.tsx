@@ -1,13 +1,13 @@
 type PointProps = {
-    color: string,
+  color: string;
 };
 
 const Point = ({ color }: PointProps) => {
-    return (
-        <div className='point-outer'>
-            <div className='point-inner' style={{ background: color }} />
-        </div>
-    )
-}
+  return (
+    <div className="point-outer">
+      <div className="point-inner" style={{ background: color }} />
+    </div>
+  );
+};
 
 export default Point;

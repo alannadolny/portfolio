@@ -1,0 +1,35 @@
+.circle-wrapper {
+  width: 150px;
+  height: 150px;
+  background: var(--alabaster-grey);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+
+  .icons-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.title {
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bolder;
+  color: var(--alabaster-grey);
+}
+
+.section-label {
+  font-size: 80px;
+  padding: 20px;
+  font-weight: bolder;
+}
