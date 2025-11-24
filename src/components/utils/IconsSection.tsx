@@ -9,8 +9,8 @@ type IconsSectionProps = {
 };
 
 const mapTechnologies = (technologies: IconType[]) =>
-  technologies.map((Icon) => (
-    <CircleWrapper>
+  technologies.map((Icon, index) => (
+    <CircleWrapper key={index}>
       <Icon size={100} />
     </CircleWrapper>
   ));

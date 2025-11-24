@@ -44,7 +44,11 @@ const Technologies = () => {
       <SectionLabel label="Technologies" color="rgb(218, 219, 219)" />
       <div id="technologies-wrapper">
         {stacks.map((stack) => (
-          <IconsSection technologies={stack.icons} label={stack.title} />
+          <IconsSection
+            key={stack.title}
+            technologies={stack.icons}
+            label={stack.title}
+          />
         ))}
       </div>
     </div>

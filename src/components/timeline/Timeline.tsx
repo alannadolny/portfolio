@@ -17,8 +17,8 @@ type TimelineProps = {
 const Timeline = ({ id, dataset }: TimelineProps) => {
   return (
     <div id={`timeline-${id}`}>
-      {dataset.map((data) => (
-        <div className="point-wrapper">
+      {dataset.map((data, index) => (
+        <div key={index} className="point-wrapper">
           <PointInfo
             title={data.titleLeftLabel}
             content={data.timeRangeLabel}

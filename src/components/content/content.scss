@@ -6,6 +6,26 @@
     justify-content: space-between;
     color: var(--alabaster-grey);
 
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      width: 100%;
+
+      #photo {
+        width: 100vw;
+      }
+
+      #profile-left-column {
+        padding: 40px;
+        width: 80% !important;
+      }
+
+      #welcome-info {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+    }
+
     #profile-left-column {
       font-size: 60px;
       width: 30%;
@@ -17,6 +37,12 @@
 
       #email {
         font-size: 30px;
+
+        @media (max-width: 1200px) {
+          align-self: start;
+          flex-wrap: wrap;
+          padding-top: 30px;
+        }
       }
     }
 
@@ -25,6 +51,11 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @media (max-width: 1200px) {
+        padding: 20px;
+        width: 70%;
+      }
     }
 
     .right-info {
@@ -39,6 +70,10 @@
         margin-left: 20px;
         font-size: 20px;
         width: 10px;
+
+        @media (max-width: 1200px) {
+          width: 100%;
+        }
       }
     }
 
@@ -46,6 +81,10 @@
       width: 500px;
       position: relative;
       top: 4px;
+
+      @media (max-width: 1200px) {
+        max-width: 500px;
+      }
     }
   }
 
@@ -66,11 +105,48 @@
     }
   }
 
-  #education, #experience, #technologies, #projects {
+  #profile {
+    position: sticky;
+    top: 146px;
+
+    @media (max-width: 1200px) {
+      position: static;
+    }
+  }
+
+  #education, #technologies {
     padding-bottom: 50px;
   }
 
+  #education, #experience, #technologies {
+    position: sticky;
+    top: 0;
+
+    @media (max-width: 1200px) {
+      position: static;
+    }
+  }
+
+  #education, #experience, #technologies {
+    min-height: 100vh;
+    width: 100vw;
+  }
+
+  #projects, #education, #experience {
+    background-color: white;
+  }
+
   #projects {
+
+    .first-project-wrapper {
+      padding-top: 150px;
+      position: relative;
+
+      .section-label {
+        position: absolute;
+        top: 0;
+      }
+    }
 
     @for $i from 0 to 4 {
       @if $i % 2 == 1 {
@@ -82,6 +158,10 @@
           }
         }
       } @else {
+        .project-wrapper-#{$i} {
+          background: white;
+        }
+
         span, p {
           color: var(--dark-teal);
         }
@@ -91,6 +171,13 @@
     .project-wrapper {
       display: flex;
       flex-direction: row;
+      position: sticky;
+      top: 0;
+
+      @media (max-width: 1200px) {
+        position: relative;
+        flex-direction: column;
+      }
 
       .project-image {
         background-color: var(--alabaster-grey);
@@ -100,11 +187,19 @@
 
         img {
           width: 800px;
+
+          @media (max-width: 1200px) {
+            width: 100%;
+          }
         }
       }
 
       .project-description {
         padding-top: 20px;
+
+        @media (max-width: 1200px) {
+          padding: 20px;
+        }
 
         span {
           font-size: 50px;
@@ -115,6 +210,14 @@
           font-size: 20px;
         }
       }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .icons-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

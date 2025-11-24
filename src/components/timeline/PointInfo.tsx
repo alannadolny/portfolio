@@ -11,7 +11,9 @@ const PointInfo = ({ title, content, contentArray }: LeftPointInfoProps) => {
       <p className="point-info-content">
         {content ? content : ""}
         {contentArray
-          ? contentArray.map((arrayItem) => <li>{arrayItem}</li>)
+          ? contentArray.map((arrayItem, index) => (
+              <li key={index}>{arrayItem}</li>
+            ))
           : ""}
       </p>
     </div>

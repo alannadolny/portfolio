@@ -34,9 +34,14 @@ const projects = [
 const Projects = () => {
   return (
     <div id="projects">
-      <SectionLabel label="Projects" color="rgb(28, 90, 103)" />
       {projects.map((project, index) => (
-        <div className={`project-wrapper project-wrapper-${index}`}>
+        <div
+          key={project.title}
+          className={`project-wrapper project-wrapper-${index} ${index == 0 ? "first-project-wrapper" : ""}`}
+        >
+          {index == 0 && (
+            <SectionLabel label="Projects" color="rgb(28, 90, 103)" />
+          )}
           <div className="project-image">
             <img src={project.image} alt={project.title} />
           </div>

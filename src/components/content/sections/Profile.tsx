@@ -4,13 +4,13 @@ const Profile = () => {
   return (
     <div id="profile">
       <div id="profile-left-column">
-        <div>
+        <div id="welcome-info">
           <div>Hey There,</div>
           <div>I am Alan</div>
         </div>
         <div id="email">alannadolnyy@gmail.com</div>
       </div>
-      <div>
+      <div id="photo">
         <img src={profileImg} alt="profile image" />
       </div>
       <div id="profile-right-column">
