@@ -7,7 +7,7 @@ const dataset = [
     titleRightLabel: "Master's degree",
     contentRightLabelArray: [
       "Rector's scholarship for high grades",
-      "Thesis: 'Codely' - Web application for running code through browser",
+      "Thesis: 'Comparison of JavaScript Technologies in the Context of Performance'",
       "Diploma thesis grade: 5",
     ],
     timeRangeLabel: "2023 - 2025",
@@ -18,7 +18,7 @@ const dataset = [
     titleRightLabel: "Bachelor's degree",
     contentRightLabelArray: [
       "Rector's scholarship for high grades",
-      "Thesis: 'Comparison of JavaScript Technologies in the Context of Performance'",
+      "Thesis: 'Codely' - Web application for running code through browser",
       "Diploma thesis grade: 5",
     ],
     timeRangeLabel: "2020 - 2023",
